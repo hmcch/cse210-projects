@@ -7,13 +7,13 @@ class Program
 
         // Ask the user for their name.
         Console.Write("What is you first name? ");
-        string first_name = Console.ReadLine();
+        string firstName = Console.ReadLine();
 
         Console.Write("What is your last name? ");
-        string last_name = Console.ReadLine();
+        string lastName = Console.ReadLine();
 
         Console.WriteLine();
-        Console.Write($"Your name is {last_name}, {first_name} {last_name}.");
+        Console.Write($"Your name is {lastName}, {firstName} {lastName}.");
 
     }
 }
