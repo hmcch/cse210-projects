@@ -1,6 +1,7 @@
 using System;
 using System.Reflection.Metadata;
-
+// All core requirements accomplished
+// All stretch challenges accomplished, lines of code 41 and 45.
 class Program
 {
     static void Main(string[] args)
@@ -38,11 +39,11 @@ class Program
         string sign = "";
         int lastDigit = percentConverted % 10;
 
-        if (lastDigit >= 7 && percentConverted >= 97 || percentConverted >= 97)// Handle the +A grades
+        if (lastDigit >= 7 && percentConverted >= 97 || percentConverted >= 97)// Stretch Challenge 1 "Handle the +A grades"
         {
             Console.WriteLine($"Your grade is: {letter}{sign}");
         }
-        else if (percentConverted <= 59 || letter == "F")// Handle the F- and F+ grades
+        else if (percentConverted <= 59 || letter == "F")// Stretch Challenge 2 "Handle the F- and F+ grades"
         {
             Console.WriteLine($"Your grade is: {letter}{sign}");
         }
