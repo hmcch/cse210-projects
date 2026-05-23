@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+//Exceeded requirements, I added the option to erase the latest entry, lines of code 6, 52-55
 class Program
 {
     static void Main(string[] args)
@@ -18,6 +18,7 @@ class Program
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
+            Console.WriteLine("6. Delete last entry");
             Console.WriteLine("What would you like to do? ");
             // Read the user input
             userOption = Console.ReadLine();
@@ -48,9 +49,13 @@ class Program
             {
                 Console.WriteLine("Until the next time.");
             }
+            else if (userOption == "6")
+            {
+                myJournal.EraseLatest();
+            }
             else
             {
-                Console.WriteLine("Invalid choice, you can only type numbers from 1 to 5");
+                Console.WriteLine("Invalid choice, you can only type numbers from 1 to 6");
             }
         }
 

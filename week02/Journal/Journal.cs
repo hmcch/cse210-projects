@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-
+//Exceeded requirements, I added the option to erase the latest entry, lines of code  73-86
 public class Journal
 {
     // Member variable goes inside the class
@@ -68,6 +68,21 @@ public class Journal
             entry._promptText = sections[1];
             entry._entryText = sections[2];
             _entries.Add(entry);
+        }
+    }
+
+    public void EraseLatest()
+    {
+        if (_entries.Count > 0)
+        {
+            int last = _entries.Count - 1;
+            _entries.RemoveAt(last);
+            Console.WriteLine("The latest entry has been erased.");
+            Console.WriteLine("In case you want to keep the file updated, select option 4 to update the journal.");
+        }
+        else
+        {
+            Console.WriteLine("No entries founded. Nothing to delete.");
         }
     }
 }
