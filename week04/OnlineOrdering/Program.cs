@@ -14,8 +14,8 @@ class Program
         Order order1 = new Order(c1);
         //Adding products into the order list
         //Order should be Name, ID/SKU, Price, Amount
-        order1.AddProduct(new Product("Laptop", "LP100", 1200, 1));
-        order1.AddProduct(new Product("Mouse", "MS200", 30, 2));
+        order1.AddProduct(new Product("Laptop", "LT200", 1200, 1));
+        order1.AddProduct(new Product("Mouse", "MU300", 30, 2));
 
         //Customer International Case
         //Address outside USA to verify shipping cost changes
@@ -24,8 +24,8 @@ class Program
 
         //Creating order for customer
         Order order2 = new Order(c2);
-        order2.AddProduct(new Product("Phone", "PH500", 500, 1));
-        order2.AddProduct(new Product("Charger", "CH100", 10, 3));
+        order2.AddProduct(new Product("Phone", "PO400", 500, 1));
+        order2.AddProduct(new Product("Charger", "CR300", 10, 3));
 
         //Printing order shipped to USA
         Console.WriteLine(order1.GetPackingLabel());
